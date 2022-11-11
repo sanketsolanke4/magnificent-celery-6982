@@ -2,13 +2,23 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
+    box-sizing: border-box;
+}
+.start{
+    height: 30px;
+    width: 100%;
+    /* border: 1px solid red ; */
+    background-color: #f2f2f2;
+}
+.start h3{
+    margin-left: 90%;
 }
 .nav{
 height: auto;
 width: 95%;
 position: relative;
 margin: auto;
-/* border: 1px solid red; */
+ /* border: 1px solid red;  */
 display: flex;
 }
 .logo>img{
@@ -19,9 +29,11 @@ display: flex;
     margin-left: 0;
    
 }
+
 .h1{
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 15px;
+    font-size: 25px;
 }
 .input>input{
      height:35px;
@@ -39,8 +51,11 @@ display: flex;
     border: none; 
    background-color: white;  
    font-size: 15px;
+   
 }
-
+.button>button i{
+    margin-right: 2px;
+}
 .list ul{
      overflow: auto;
 }
@@ -61,27 +76,101 @@ display: flex;
     text-decoration: none;
     padding:10px 10px;
 }
-/* .menu2{
-      position: relative;  
+.next{
     width: 100%;
-    height: 100px;
-    box-shadow: 0px 10px 2px 3px lightgray;
-    top: 120%;
-    left: 0;
-    opacity: 0;
-    visibility: hidden;
-} */
+    height:110px;
+    /* border: 1px solid red; */
+    background-color: #f2f2f2;
+}
+.next h5{
+    float: left;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 15px;
+    color: black;
+}
+.next i{
+    padding-right:7px ;
+}
+.small{
+    height: 50px;
+    width: 100%;
+    /* border: 1px solid red ; */
+    background-color: #cccccc;
+}
+.small:hover{
+    background-color: #f2f2f2;
+}
+.small h4{
+    padding-left:15%;
+    padding-top: 15px;
+}
 
-/* ul>li:hover .menu2{
-    opacity: 1;
-    visibility: visible;
-} */
-/* .menu2-child ul li{
-    list-style: none;
-    padding: 7px;
+/* slide show */
+.slider-box{
+    width:100%;
+    height:100%;
+    position: relative;
+    /* border: 5px solid red; */
+    overflow: hidden; 
+    
+}
 
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.5s ease;
+     
+}
+#slider img{
+    width: 100%;
 
-} */
-/* .menu2-child h3{
-    padding:10px;
- } */
+}
+.indicators{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.indicators span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+}
+.indicators span:hover{
+    background-color:black;
+}
+
+.text{
+    color: white;
+    padding:120px 20%;
+    position: absolute;
+    top:8px;
+    font-size: 40px;
+    width: 100%;
+    text-align: right;
+
+}
+.p{
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 60%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.shop{
+   
+    padding:12px 30px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    margin-right: 20%;
+}
+.h4{
+    margin-left: 140px;
+    font-size: 30px;
+}
