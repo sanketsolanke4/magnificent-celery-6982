@@ -22,18 +22,17 @@ function addData(){
         if(z == q){
             var c = localStorage.setItem("z",z);
             var h = localStorage.setItem("q", q);
-            var check = document.querySelector(".lable").checked;
-            if(check){
-                alert("Register Successful !");
-                window.location.href="login.html";
-            }else{
-                alert("please accept terms and condition !");
-            }
+            let x = document.querySelector("#termCon").checked;
             
-        }else{
-            alert("Password Incorrect !");
+            
+                alert("Register Successful Please Login !");
+                window.location.href="login.html";
+             
+            
         }
-        
+        else{
+            alert("Password Incorrect !");
+        }        
     }
     else if(x == [] || y == [] || z == [] || q == []){
        alert(" please fill all details!");
@@ -42,10 +41,6 @@ function addData(){
         alert("enter correct format of email !");
     }
     
-
-   
-
-
 }
 
 function checkData(){
@@ -67,3 +62,4 @@ function checkData(){
         alert("Invalid Details !");
     }
 }
+
